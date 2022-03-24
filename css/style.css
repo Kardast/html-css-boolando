@@ -22,7 +22,7 @@ main{
 }
 
 /* Sezioni foto */
-.sez_alta{
+main .sez_alta{
     width: 80%;
     height: 700px;
     /* background-color: rgb(94, 132, 204); */
@@ -32,7 +32,7 @@ main{
     margin-bottom: 100px;
 }
 
-.sez_bassa{
+main .sez_bassa{
     width: 80%;
     height: 700px;
     /* background-color: rgb(94, 132, 204); */
@@ -48,26 +48,32 @@ main{
     position: relative;
 }
 
-.foto{
+.container_photo .foto{
     position: relative;
     max-width: 100%;
     z-index: 2;
 }
 
-.descrizione_articolo{
+.container_photo .foto_alt{
+    position: absolute;
+    max-width: 100%;
+    left: 0;
+}
+
+.container_photo .descrizione_articolo{
     text-align: left;
     margin-top: 5px;
 }
 
-.prezzo{
+.descrizione_articolo .prezzo{
     color: red;
 }
 
-.old_price{
+.descrizione_articolo .old_price{
     text-decoration: line-through;
 }
 
-.labels{
+.container_photo .labels{
     font-size: 15px;
     color: white;
     display: inline-block;
@@ -76,19 +82,19 @@ main{
     z-index: 500;
 }
 
-.discount{
+.labels .discount{
     background-color: red;
     padding: 5px;
     display: inline-block;
 }
 
-.info{
+.labels .info{
     background-color: green;
     padding: 5px;
     display: inline-block;
 }
 
-.heart{
+.container_photo .heart{
     background-color: rgb(207, 183, 173);
     font-size: 30px;
     color: red;
@@ -105,21 +111,15 @@ main{
 }
 
 /* Hover foto */
-.foto_alt {
-    position: absolute;
-    max-width: 100%;
-    left: 0;
-    z-index: 1;
-}
-
-.foto:hover {
+.foto:hover{
     z-index: 0;
 }
 
-.foto_alt:hover {
+.foto_alt:hover{
     z-index: 3;
 }
 
+/* Footer */
 footer{
     margin-left: 5%;
 }
