@@ -1,0 +1,39 @@
+/* Regole generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: rgb(162, 223, 223);
+}
+
+/* Inizio main */
+main{
+    height: 1500px;
+    width: 80%;
+    background-color: rgb(207, 183, 173);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+.sez_alta{
+    width: 80%;
+    height: 700px;
+    background-color: rgb(94, 132, 204);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.sez_bassa{
+    width: 80%;
+    height: 700px;
+    background-color: rgb(94, 132, 204);
+    margin-left: auto;
+    margin-right: auto;
+}
