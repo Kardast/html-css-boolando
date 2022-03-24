@@ -26,6 +26,7 @@ main{
     width: 80%;
     height: 700px;
     /* background-color: rgb(94, 132, 204); */
+    padding-top: 50px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
@@ -34,7 +35,8 @@ main{
 .sez_bassa{
     width: 80%;
     height: 700px;
-    background-color: rgb(94, 132, 204);
+    /* background-color: rgb(94, 132, 204); */
+    padding-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -47,11 +49,14 @@ main{
 }
 
 .foto{
+    position: relative;
     max-width: 100%;
+    z-index: 2;
 }
 
 .descrizione_articolo{
     text-align: left;
+    margin-top: 5px;
 }
 
 .prezzo{
@@ -68,6 +73,7 @@ main{
     display: inline-block;
     position: absolute;
     bottom: 80px;
+    z-index: 500;
 }
 
 .discount{
@@ -95,11 +101,25 @@ main{
     vertical-align: middle;
     right: 0;
     top: 20px;
+    z-index: 500;
 }
 
 /* Hover foto */
-.foto_hover {
+.foto_alt {
     position: absolute;
     max-width: 100%;
-    display: none;
+    left: 0;
+    z-index: 1;
+}
+
+.foto:hover {
+    z-index: 0;
+}
+
+.foto_alt:hover {
+    z-index: 3;
+}
+
+footer{
+    margin-left: 5%;
 }
