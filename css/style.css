@@ -21,13 +21,14 @@ main{
     margin-top: 40px;
 }
 
+/* Sezioni foto */
 .sez_alta{
-    width: 100%;
+    width: 80%;
     height: 700px;
+    /* background-color: rgb(94, 132, 204); */
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
-    text-align: center;
 }
 
 .sez_bassa{
@@ -36,12 +37,13 @@ main{
     background-color: rgb(94, 132, 204);
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
 }
 
+/* Dettagli singole foto */
 .container_photo{
     display: inline-block;
     width: 33%;
+    position: relative;
 }
 
 .foto{
@@ -51,3 +53,48 @@ main{
 .descrizione_articolo{
     text-align: left;
 }
+
+.prezzo{
+    color: red;
+}
+
+.old_price{
+    text-decoration: line-through;
+}
+
+.labels{
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    bottom: 80px;
+}
+
+.discount{
+    background-color: red;
+    padding: 5px;
+    display: inline-block;
+}
+
+.info{
+    background-color: green;
+    padding: 5px;
+    display: inline-block;
+}
+
+.heart{
+    background-color: rgb(207, 183, 173);
+    font-size: 30px;
+    color: red;
+    display: inline-block;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    right: 0;
+    top: 20px;
+}
+
+/* Hover foto */
